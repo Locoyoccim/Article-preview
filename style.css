@@ -1,0 +1,234 @@
+:root{
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDArkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    height: 100%;
+    width: 375px;
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope";
+    font-size: 13px;
+    background-color: var(--LightGrayishBlue);
+}
+.principal{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    border-radius: 10px;
+    height: 508px;
+}
+#portada img{
+    width: 100%;
+    height: 30%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+footer div .michelle{
+    width: 50px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+#descripcion{
+    height: 200px;
+    margin: 40px 35px 0 35px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.contenido {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(56, 56, 56);
+}
+.detail-product {
+    font-weight: 300;
+    color: gray;
+}
+.icons > img{
+    width: 25px;
+}
+.seller{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 1;
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    transform: translate(-40px, 15px);
+}
+.seller p{
+    display: grid;
+    margin-right: 30px;
+    margin-left: 0;
+}
+.presionar{
+cursor: pointer;
+}
+.date{
+    color: var(--GrayishBlue);
+}
+#compartir{
+    background-color: var(--LightGrayishBlue);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#compartir img{
+    border: 0;
+    width: 15px;
+    border-radius: 50%;
+}
+#social{
+    position: absolute;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--VeryDarkGrayishBlue);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 0;
+    opacity: 0;
+    width: 100%;
+    transform: translate(-40px, 15px);
+}
+#social p{
+    color: var(--LightGrayishBlue);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.share{
+    display: flex;
+    width: 20px;
+}
+.SH{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+button{
+    background-color: transparent;
+    color: var(--LightGrayishBlue);
+    border: 0;
+    cursor: pointer;
+
+}
+@media screen and (min-width: 725px) {
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .principal{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 600px;
+        height: 220px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+   #portada img{
+        opacity: 0;
+   }
+   #portada{
+    position: relative;
+    background-image: url(/images/drawers_2.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 190px;
+   }
+   #descripcion{
+    width: 410px;
+    display: grid;
+    height: 100%;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   }
+   .contenido{
+    height: 60px;
+    margin: 0;
+   }
+   .detail-product{
+    height: 70px;
+   }
+   footer{
+    height: 60px;
+    width: 100%;
+   }
+   .seller{
+    padding-top: 7px;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    transform: translate(0, -15px);
+   }
+   .seller p{
+    display: grid;
+    align-items: center;
+    margin-left: 20px;
+   }
+   .presionar{
+    position: relative;
+    margin-left: 90px;
+   }
+   #social {
+    opacity: 0;
+    position: relative;
+    width: 250px;
+    height: 60px;
+    transform: translate(190px, -75px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10px;
+   }
+   #social .SH{
+    position: absolute;
+    transform: translateY(80px);
+    opacity: 0;
+   }
+   #social::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+   }
+}
+
+
+
+
